@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge_Projekte</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <!-- Project: Background-color -->
+    <section class="bgColor">
+        <form>
+            <input type="text" name="colorInput" id="colorInput">
+            <p>Give me a color or link to image!</p>
+            <p>example link: https://source.unsplash.com/featured/800x800</p>
+            <p>example gradient: linear-gradient(orange, pink)</p>
+            <input onclick="showColor()" type="submit" value="Show color" id="showColorSubmit">
+        </form>
+    </section>
+
+    <!-- Project: Score Keeper -->
+    <section class="scoreKeeper_wrapper">
+        <div>
+            <fieldset>
+                <legend>Home</legend>
+                <div class="scoreDispay">
+                    <p id="scoreHome">0</p>
+                </div>
+                <div class="pointButtons pointsHome">
+                    <input onclick="addOneHome()" type="submit" name="" value="+1" id="addOneHome">
+                    <input onclick="addTwoHome()" type="submit" name="" value="+2" id="addTwoHome">
+                    <input onclick="addThreeHome()" type="submit" name="" value="+3" id="addThreeHome">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Away</legend>
+                <div class="scoreDisplay">
+                    <p id="scoreAway">0</p>
+                </div>
+                <div class="pointButtons pointsAway">
+                    <input input onclick="addOneAway()" type="submit" name="" value="+1" id="addOneAway">
+                    <input onclick="addTwoAway()" type="submit" name="" value="+2" id="addTwoAway">
+                    <input onclick="addThreeAway()" type="submit" name="" value="+3" id="addThreeAway">
+                </div>
+            </fieldset>
+        </div>
+        <input onclick="resetScore()" value="Reset" type="submit" name="reset" id="resetScore">
+    </section>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
