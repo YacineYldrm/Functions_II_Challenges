@@ -46,6 +46,19 @@
         </div>
         <input onclick="resetScore()" value="Reset" type="submit" name="reset" id="resetScore">
     </section>
+
+    <!-- Project: Score Keeper -->
+    <section class="addition_game_wrapper">
+        <p id="valueOne"></p>
+        <p>+</p>
+        <p id="valueTwo"></p>
+        <form>
+            <input type="number" name="resultInput" id="resultInput" >
+            <input onclick="checkResult()" type="submit" name="checkRes" id="checkRes" value="Ergebnis">
+            <input onclick="randValues()" type="submit" name="randVal" id="randVal" value="Neue Aufgabe">
+        </form>
+        <p id="displayFeedback"></p>
+    </section>
     <script src="./assets/js/main.js"></script>
 </body>
 </html>

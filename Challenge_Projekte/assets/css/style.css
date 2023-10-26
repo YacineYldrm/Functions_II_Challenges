@@ -5,9 +5,9 @@
     padding: 0;
 }
 
-/*------------------------------------
+/* ------------------------------------
         Project: Background-color
---------------------------------------*/
+-------------------------------------- */
 
 .bgColor
 {
@@ -51,9 +51,9 @@
     background-color: orange;
 }
 
-/*----------------------------------
+/* ----------------------------------
         Project: Score Keeper
-------------------------------------*/
+------------------------------------ */
 
 .scoreKeeper_wrapper
 {
@@ -141,4 +141,27 @@
     margin-inline: auto;
     transform: translateY(200px);
     padding: 12px 24px;
+}
+
+/* ----------------------------------
+        Project: Addition Game
+------------------------------------ */
+
+.addition_game_wrapper
+{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.addition_game_wrapper p:nth-of-type(odd) 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
 }

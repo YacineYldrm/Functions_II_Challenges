@@ -91,3 +91,44 @@ const addThreeAway = () =>
     pointsAway += 3;
     scoreDisplayAway.textContent = pointsAway;
 }
+
+// ----------------------------------
+//       Project: Adition Game
+// ----------------------------------
+
+
+
+let firstValue = Number(valueOne.textContent = Math.floor(Math.random() * 100)); 
+let secondValue = Number(valueTwo.textContent = Math.floor(Math.random() * 100));
+// console.log(solution);
+
+
+const checkResult = () =>
+{
+    const resultInput = Number(document.body.querySelector('#resultInput').value);
+    const valueOne = document.body.querySelector('#valueOne');
+    const valueTwo = document.body.querySelector('#valueTwo');
+    const displayFeedback = document.body.querySelector('#displayFeedback');
+    let solution = firstValue + secondValue;
+
+    event.preventDefault()
+    if(resultInput === solution)
+    {
+        displayFeedback.textContent = "Das ist richtig!"
+        displayFeedback.style.color = "green";
+    }
+    else
+    {
+        displayFeedback.textContent = "Leider falsch!"
+        displayFeedback.style.color = "red";
+    }
+}
+
+const randValues = () =>
+{
+    event.preventDefault()
+    
+    firstValue = Number(valueOne.textContent = Math.floor(Math.random() * 100));
+    secondValue = Number(valueTwo.textContent = Math.floor(Math.random() * 100));
+
+}
