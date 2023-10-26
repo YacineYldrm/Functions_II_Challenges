@@ -100,8 +100,6 @@ const addThreeAway = () =>
 
 let firstValue = Number(valueOne.textContent = Math.floor(Math.random() * 100)); 
 let secondValue = Number(valueTwo.textContent = Math.floor(Math.random() * 100));
-// console.log(solution);
-
 
 const checkResult = () =>
 {
@@ -127,7 +125,7 @@ const checkResult = () =>
 const randValues = () =>
 {
     event.preventDefault()
-    
+
     firstValue = Number(valueOne.textContent = Math.floor(Math.random() * 100));
     secondValue = Number(valueTwo.textContent = Math.floor(Math.random() * 100));
 
